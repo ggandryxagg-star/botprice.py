@@ -25,8 +25,7 @@ def main(message):
     cur.close()
     con.close()
 
-    bot.send_message(message.chat.id, 'Привет, этот бот регистрирует тебя на курс по программированию\nВводите свои достоверные данные иначе вы будете исключены с курса')
-    bot.send_message(message.chat.id, 'Введите свое имя:')
+    bot.send_message(message.chat.id, 'Привет, этот бот регистрирует тебя на курс по программированию\nВведите свое имя:')
     bot.register_next_step_handler(message, user_name)
 
 def user_name(message):
